@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <title>Table</title>
+    <style>
+        thead {
+            background-color: rgb(72, 158, 171);
+        }
+        tbody {
+            background-color: rgb(214, 219, 223);
+        }
+        #yr {
+            background-color: rgb(88, 182, 151);
+        } 
+        tfoot {
+            background-color: rgb(197, 228, 255);
+        }
+    </style>
 </head>
 <body>
-<table border="1px">
+<table>
     <caption>Student Grade Report Table</caption>
     <thead>
     <tr>
@@ -19,7 +33,7 @@
 
     <tbody>
         <tr>
-            <td rowspan="5">2026</td>
+            <td rowspan="5" id="yr">2026</td>
             <td>Alex</td>
             <td>90</td>
             <td>85</td>
