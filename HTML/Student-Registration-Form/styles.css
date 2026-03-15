@@ -1,0 +1,25 @@
+body {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border-radius: 10px;
+}
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
