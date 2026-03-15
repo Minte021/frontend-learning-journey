@@ -7,74 +7,85 @@
 </head>
 <body>
     <h1>Student Registration Form</h1>
-    <h3>Personal Information</h3>
     <form action="process_registration.php" method="POST">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required>
-        <br><br>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
         <br><br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br><br>
         <label for="pnumber">Phone Number:</label>
-        <input type="number" id="pnumber" name="pnumber" required>
+        <input type="tel" id="pnumber" name="pnumber" required>
         <br><br>
         <label for="bdate">Birth Date:</label>
         <input type="date" id="bdate" name="bdate">
         <br><br>
-        <p>Please select your gender:</p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
         <br><br>
-        <h2>Address Information</h2>
-        <label for="country">Country:</label>
-        <select id='country' name="country">
-            <option value="" disabled selected>Select your country</option>
-            <option value="usa">United States</option>
-            <option value="canada">Canada</option>
-            <option value="uk">United Kingdom</option>
-            <option value="australia">Australia</option>
-            <option value="ethiopia">Ethiopia</option>
-        </select>
-        <br><br>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city"><br><br>
-        <label for="saddress">Street Address:</label>
-        <input type="text" id="saddress" name="saddress"><br><br>
-        <h2>Academic Information</h2>
-        <label for="program">Program of study:</label>
-        <select id="program" name="program">
-            <option value="" disabled selected>Select program of study</option>
-            <option value="cs">Computer Science</option>
-            <option value="it">Engineering</option>
-            <option value="business">Business</option>
-            <option value="medicine">Medicine</option>
-        </select><br>
-        <p>Year of Study:</p>
-        <input type="radio" id="yr1" name="year" value="1">
-        <label for="yr1">1st Year</label><br>
-        <input type="radio" id="yr2" name="year" value="2">
-        <label for="yr2">2nd Year</label><br>
-        <input type="radio" id="yr3" name="year" value="3">
-        <label for="yr3">3rd Year</label><br>
-        <input type="radio" id="yr4" name="year" value="4">
-        <label for="yr4">4th Year</label><br><br>
-
-        <h2>Select skills</h2>
-        <input type="checkbox" id="skill" name="skill" value="programming">
-        <label for="skill">Programming</label><br>
-        <input type="checkbox" id="skill" name="skill" value="mathematics">
-        <label for="skill">Mathematics</label><br>
-        <input type="checkbox" id="skill" name="skill" value="communication">
-        <label for="skill">Communication</label><br>
-        <input type="checkbox" id="skill" name="skill" value="design">
-        <label for="skill">Design</label><br>
-        <input type="checkbox" id="skill" name="skill" value="problem-solving">
-        <label for="skill">Problem Solving</label><br><br>
+        <fieldset>
+            <legend>Address Information</legend>
+            <label for="country">Country:</label>
+            <select id='country' name="country">
+                <option value="" disabled selected>Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="ethiopia">Ethiopia</option>
+            </select>
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+            <label for="saddress">Street Address:</label>
+            <input type="text" id="saddress" name="saddress"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="program">Program of study:</label>
+            <select id="program" name="program">
+                <option value="" disabled selected>Select program of study</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Engineering</option>
+                <option value="business">Business</option>
+                <option value="medicine">Medicine</option>
+            </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Year of Study</legend>
+                <input type="radio" id="yr1" name="year" value="1">
+                <label for="yr1">1st Year</label><br>
+                <input type="radio" id="yr2" name="year" value="2">
+                <label for="yr2">2nd Year</label><br>
+                <input type="radio" id="yr3" name="year" value="3">
+                <label for="yr3">3rd Year</label><br>
+                <input type="radio" id="yr4" name="year" value="4">
+                <label for="yr4">4th Year</label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" id="skill1" name="skill" value="programming">
+                <label for="skill1">Programming</label><br>
+                <input type="checkbox" id="skill2" name="skill" value="mathematics">
+                <label for="skill2">Mathematics</label><br>
+                <input type="checkbox" id="skill3" name="skill" value="communication">
+                <label for="skill3">Communication</label><br>
+                <input type="checkbox" id="skill4" name="skill" value="design">
+                <label for="skill4">Design</label><br>
+                <input type="checkbox" id="skill5" name="skill" value="problem-solving">
+                <label for="skill5">Problem Solving</label><br><br>
+            </fieldset>
 
         <label for="profile">Upload Profile Picture:</label>
         <input type="file" id="profile" name="profile" accept="image/*">
