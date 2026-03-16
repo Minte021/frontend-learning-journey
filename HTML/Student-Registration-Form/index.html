@@ -13,19 +13,19 @@
         <fieldset>
             <legend>Personal Details</legend>
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="fname" name="fname" class="person" placeholder="First Name" required>
             <br><br>
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required>
+            <input type="text" id="lname" name="lname" class="person" placeholder="Last Name" required>
         <br><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" class="person" placeholder="Email" required>
         <br><br>
         <label for="pnumber">Phone Number:</label>
-        <input type="tel" id="pnumber" name="pnumber" required>
+        <input type="tel" id="pnumber" name="pnumber" class="person" placeholder="Phone Number" required>
         <br><br>
         <label for="bdate">Birth Date:</label>
-        <input type="date" id="bdate" name="bdate">
+        <input type="date" id="bdate" class="person" name="bdate">
         <br><br>
         </fieldset>
         <br>
@@ -37,10 +37,11 @@
             <label for="female">Female</label>
         </fieldset>
         <br>
+        
         <fieldset>
             <legend>Address Information</legend>
             <label for="country">Country:</label>
-            <select id='country' name="country">
+            <select id='country' name="country" class="person">
                 <option value="" disabled selected>Select your country</option>
                 <option value="usa">United States</option>
                 <option value="canada">Canada</option>
@@ -50,9 +51,9 @@
             </select>
             <br><br>
             <label for="city">City:</label>
-            <input type="text" id="city" name="city"><br><br>
+            <input type="text" id="city" name="city" class="person"><br><br>
             <label for="saddress">Street Address:</label>
-            <input type="text" id="saddress" name="saddress"><br><br>
+            <input type="text" id="saddress" name="saddress" class="person"><br><br>
         </fieldset>
         <br>
         <fieldset>
@@ -99,8 +100,8 @@
         <br><br>
         <input type="checkbox" id="terms" name="terms" required>
         <label for="terms">I agree to the terms and conditions</label><br><br>
-        <input type="submit" value="register"><br><br>
-        <input type="reset" value="reset">
+        <input type="submit" value="register" id="submit"><br><br>
+        <input type="reset" value="reset" id="reset">
     </form>
 </body>
 </html>

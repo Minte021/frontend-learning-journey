@@ -23,3 +23,33 @@ legend {
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
+
+label {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(67, 65, 65);
+}
+
+.person {
+  padding: 8px;
+  border-radius: 4px;
+  width: 97%;
+  border: 1px solid #ccc;
+}
+
+#submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
