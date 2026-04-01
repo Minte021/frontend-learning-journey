@@ -12,12 +12,20 @@ body {
   body {
     background-color: lightblue;
   }
+
+header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+
 }
 form {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(100% / 2);
 }
 
 fieldset {
@@ -36,10 +44,15 @@ h1, h2, h3 {
 }
 
 @media (max-width: 600px) {
-    h1, h2, h3 {
+    h2, h3 {
     font-size: 32px;
   }
 }
+
+h1 {
+  font-size: clamp(2rem, 5vm, 4rem);
+}
+
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
