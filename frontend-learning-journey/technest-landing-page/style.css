@@ -65,7 +65,14 @@ footer {
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
 }
-.footer-list li {
+.footer-list{
+    display: flex;
     list-style-type: none;
     text-decoration: none;
+}
+
+.footer-list li, a {
+    padding: 7px;
+    text-decoration: none;
+    color: whitesmoke;
 }
