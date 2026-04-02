@@ -9,6 +9,7 @@ body {
 
 .navbar_inner {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-right: 50px;
@@ -21,6 +22,18 @@ body {
     color: #f1f1f1;
 }
 
+.navbar_inner nav a:hover {
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.navbar .navbar_inner #logo {
+    color: rgb(86, 154, 154);
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
 h1, h2 {
     color: #f1f1f1;
 }
@@ -28,7 +41,16 @@ h1, h2 {
 .hero-section, .feature-section, .testimonial-section, .call-to-action-section {
     display: flex;
     color: whitesmoke;
-    font-family: 'Poppin', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    padding: 15px;
+}
+
+.hero-section img{
+    width: 55%;
+    height: auto;
 }
 
 @media(max-width: 600px) {
