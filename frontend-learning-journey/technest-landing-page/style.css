@@ -58,3 +58,14 @@ p {
         flex-direction: column;
     }
 }
+
+footer {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+.footer-list li {
+    list-style-type: none;
+    text-decoration: none;
+}
