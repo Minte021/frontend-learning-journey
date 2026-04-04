@@ -9,46 +9,53 @@
     background-position: center;
     background-size: cover;
     height: 109vh;
+    justify-content: space-between;
 }
 
 .navbar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 75px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .icon {
-    width: 200px;
-    float: left;
+    width: auto;
     height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     color: #ff7200;
     font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
+    font-family: Arial, sans-serif;
+    padding-left: 0;
+    float: none;
+    padding-top: 0;
 }
 
 .menu {
-    width: 400px;
-    float: left;
+    width: auto;
     height: 70px;
 }
 
 ul {
-    float: left;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 ul li {
     list-style-type: none;
-    margin-left: 62px;
-    margin-top: 27px;
+    margin: 0;
     font-size: 14px;
 }
 
@@ -65,9 +72,10 @@ ul li a:hover {
 }
 
 .search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .srch {
@@ -76,7 +84,7 @@ ul li a:hover {
     height: 40px;
     background: transparent;
     border: 1px solid #ff7200;
-    margin-top: 13px;
+    margin: 0;
     color: #fff;
     border-right: none;
     font-size: 16px;
