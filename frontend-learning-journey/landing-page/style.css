@@ -87,8 +87,14 @@
 }
 
 .main-container-image img {
-    width: 200px;
+    width: 350px;
     height: auto;
+}
+
+.main-container-image p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .quote-section {
@@ -102,4 +108,13 @@
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
 }
